@@ -4,7 +4,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@naive-pro/store": ["../../packages/store/src"],
+      "@naive-pro/ui": ["../../packages/ui/src"]
     }
   },
   "include": ["src", "mock", "vite.config.ts", "auto-imports.d.ts", "components.d.ts", "typed-router.d.ts"]

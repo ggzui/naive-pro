@@ -1,0 +1,15 @@
+{
+  "name": "@naive-pro/store",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "module": "./src/index.ts",
+  "peerDependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.27"
+  },
+  "dependencies": {
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "zipson": "^0.2.12"
+  }
+}
