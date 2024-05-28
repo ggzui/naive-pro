@@ -2,6 +2,6 @@
 
 <template>
   <np-config-provider>
-    <div>app</div>
+    <router-view />
   </np-config-provider>
 </template>

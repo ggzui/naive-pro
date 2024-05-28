@@ -45,5 +45,7 @@
     "gql",
     "graphql",
     "astro"
-  ]
+  ],
+
+  "typescript.preferences.autoImportFileExcludePatterns": ["vue-router$"]
 }

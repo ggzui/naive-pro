@@ -7,9 +7,9 @@ dist
 coverage
 node_modules
 
-components.d.ts
-auto-imports.d.ts
-typed-router.d.ts
+apps/**/components.d.ts
+apps/**/auto-imports.d.ts
+apps/**/typed-router.d.ts
 
 *.local
 stats.html

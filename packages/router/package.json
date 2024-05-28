@@ -1,0 +1,16 @@
+{
+  "name": "@naive-pro/router",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "peerDependencies": {
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "unplugin-vue-router": "^0.8.8"
+  }
+}
