@@ -7,17 +7,23 @@
   },
   "scripts": {
     "cz": "czg",
+    "dev": "turbo dev",
+    "build": "turbo build",
     "lint": "eslint . --max-warnings 0 --cache",
     "lint:fix": "pnpm run lint --fix",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "turbo stub",
     "prepare": "husky install"
   },
+  "dependencies": {
+    "vue": "^3.4.27"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.19.0",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@naive-pro/ts-config": "workspace:*",
+    "@naive-pro/vite-config": "workspace:*",
     "@types/node": "^20.12.12",
     "cz-git": "^1.9.2",
     "czg": "^1.9.2",
@@ -27,7 +33,8 @@
     "turbo": "^1.13.3",
     "typescript": "^5.4.5",
     "unbuild": "^2.0.0",
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "vue-tsc": "^2.0.19"
   },
   "config": {
     "commitizen": {
