@@ -1,0 +1,12 @@
+{
+  "name": "@naive-pro/ts-config",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "ts config for naive pro",
+  "license": "MIT",
+  "files": [
+    "base.json",
+    "node.json",
+    "web.json"
+  ]
+}
