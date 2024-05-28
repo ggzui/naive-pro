@@ -9,6 +9,6 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "noImplicitAny": false,
     "moduleResolution": "bundler",
-    "types": ["vite/client"]
+    "types": ["vite/client", "unplugin-vue-router/client"]
   }
 }
