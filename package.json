@@ -27,7 +27,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@naive-pro/ts-config": "workspace:*",
     "@naive-pro/vite-config": "workspace:*",
-    "@types/node": "^20.12.12",
+    "@types/node": "*",
     "cz-git": "^1.9.2",
     "czg": "^1.9.2",
     "eslint": "^9.3.0",

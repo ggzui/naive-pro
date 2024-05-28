@@ -8,5 +8,10 @@
     "base.json",
     "node.json",
     "web.json"
-  ]
+  ],
+  "dependencies": {
+    "@naive-pro/types": "workspace:*",
+    "@types/node": "*",
+    "vite": "^5.2.11"
+  }
 }
