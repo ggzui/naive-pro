@@ -1,5 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>app</div>
+  <np-config-provider>
+    <div>app</div>
+  </np-config-provider>
 </template>

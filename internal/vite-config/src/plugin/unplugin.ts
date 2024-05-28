@@ -4,6 +4,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 import AutoImport from 'unplugin-auto-import/vite'
 import Imagemin from 'unplugin-imagemin/vite'
 import Macros from 'unplugin-macros/vite'
+import { NaiveProResolver } from '@naive-pro/shared'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
@@ -33,6 +34,7 @@ export function configUnpluginPlugin() {
           prefix: 'icon',
         }),
         NaiveUiResolver(),
+        NaiveProResolver(),
       ],
     }),
     Icons({

@@ -2,7 +2,7 @@ import precess from 'node:process'
 import { resolve } from 'node:path'
 import { type UserConfig, defineConfig, loadEnv, mergeConfig } from 'vite'
 import { createPlugins } from '../plugin'
-import { commonConfig } from './common'
+import { appCommon } from './common'
 
 export function defineApplicationConfig(defineOptions: UserConfig = {}) {
   return defineConfig(async ({ command, mode }) => {
@@ -55,7 +55,7 @@ export function defineApplicationConfig(defineOptions: UserConfig = {}) {
       plugins,
     }
 
-    const mergedConfig = mergeConfig(commonConfig, applicationConfig)
+    const mergedConfig = mergeConfig(appCommon, applicationConfig)
 
     return mergeConfig(mergedConfig, defineOptions)
   })

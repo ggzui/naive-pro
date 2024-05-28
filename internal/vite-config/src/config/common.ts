@@ -3,7 +3,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueRouter from 'unplugin-vue-router/vite'
 import type { UserConfig } from 'vite'
 
-export const commonConfig: UserConfig = {
+export const appCommon: UserConfig = {
   server: {
     host: true,
   },

@@ -10,5 +10,8 @@
   },
   "peerDependencies": {
     "vue": "^3.4.27"
+  },
+  "dependencies": {
+    "@naive-pro/ui": "workspace:*"
   }
 }
