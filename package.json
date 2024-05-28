@@ -10,19 +10,23 @@
     "lint": "eslint . --max-warnings 0 --cache",
     "lint:fix": "pnpm run lint --fix",
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "turbo stub",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.19.0",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@naive-pro/ts-config": "workspace:*",
     "@types/node": "^20.12.12",
     "cz-git": "^1.9.2",
     "czg": "^1.9.2",
     "eslint": "^9.3.0",
     "husky": "^8.0.0",
     "lint-staged": "^15.2.5",
+    "turbo": "^1.13.3",
     "typescript": "^5.4.5",
+    "unbuild": "^2.0.0",
     "vite": "^5.2.11"
   },
   "config": {
