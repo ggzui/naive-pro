@@ -15,6 +15,7 @@
     "vue-router": "^4.3.2"
   },
   "dependencies": {
+    "@naive-pro/i18n": "workspace:*",
     "@naive-pro/router": "workspace:*",
     "@naive-pro/store": "workspace:*",
     "@naive-pro/ui": "workspace:*"

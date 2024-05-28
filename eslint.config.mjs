@@ -5,6 +5,8 @@ export default antfu(
     ignores: ['**/coverage', '**/assets', '**/public', '**/dist'],
   },
   {
-    rules: {},
+    rules: {
+      'no-console': 'warn',
+    },
   },
 )

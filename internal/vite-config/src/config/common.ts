@@ -11,5 +11,5 @@ export const appCommon: UserConfig = {
     reportCompressedSize: false,
     chunkSizeWarningLimit: 1024,
   },
-  plugins: [VueRouter(), vue(), vueJsx()],
+  plugins: [VueRouter({ routeBlockLang: 'yaml' }), vue(), vueJsx()],
 }

@@ -3,11 +3,11 @@ import { createPinia } from 'pinia'
 import { createPersistedState } from 'pinia-plugin-persistedstate'
 import { parse, stringify } from 'zipson'
 
-export const pinia = createPinia()
+export const store = createPinia()
 
 export function setupStore(app: App) {
   const shortName = import.meta.env.VITE_SHORT_NAME || 'cn'
-  pinia.use(createPersistedState({
+  store.use(createPersistedState({
     storage: localStorage,
     key: key => `${shortName}__${key}`.toUpperCase(),
     serializer: {
@@ -16,5 +16,5 @@ export function setupStore(app: App) {
     },
   }))
 
-  app.use(pinia)
+  app.use(store)
 }
