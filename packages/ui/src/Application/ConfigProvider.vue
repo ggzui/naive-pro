@@ -26,7 +26,7 @@ const ContextHolder = defineComponent({
 </script>
 
 <template>
-  <NConfigProvider :locale="localeStore.getNaiveUiLocale" :date-locale="localeStore.getNaiveUiDateLocale" :theme="themeStore.naiveTheme" class="h-full">
+  <NConfigProvider :locale="localeStore.naiveLocale" :date-locale="localeStore.naiveDateLocale" :theme="themeStore.naiveTheme" class="h-full">
     <NLoadingBarProvider>
       <NDialogProvider>
         <NNotificationProvider>

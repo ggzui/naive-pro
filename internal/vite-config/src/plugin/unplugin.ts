@@ -20,6 +20,7 @@ export function configUnpluginPlugin() {
         'vue',
         'pinia',
         'vue-i18n',
+        '@vueuse/core',
         VueRouterAutoImports,
         {
           'naive-ui': [

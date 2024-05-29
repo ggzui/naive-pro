@@ -26,4 +26,11 @@ declare interface Window {
 
 interface ThemeSetting {
   themeScheme: import('./union').ThemeScheme
+  primaryColor: string
+  otherColor: {
+    success: string
+    warning: string
+    error: string
+    info: string
+  }
 }
