@@ -4,6 +4,8 @@ import { setupStore } from '@naive-pro/store'
 import { setupI18n } from '@naive-pro/i18n'
 import App from './App.vue'
 
+import 'virtual:uno.css'
+
 async function bootstrap() {
   const app = createApp(App)
 

@@ -1,6 +1,7 @@
-import vue from 'unplugin-vue/vite'
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import Vue from 'unplugin-vue/vite'
+import VueJsx from '@vitejs/plugin-vue-jsx'
 import VueRouter from 'unplugin-vue-router/vite'
+import UnoCSS from 'unocss/vite'
 import type { UserConfig } from 'vite'
 
 export const appCommon: UserConfig = {
@@ -11,5 +12,5 @@ export const appCommon: UserConfig = {
     reportCompressedSize: false,
     chunkSizeWarningLimit: 1024,
   },
-  plugins: [VueRouter({ routeBlockLang: 'yaml' }), vue(), vueJsx()],
+  plugins: [VueRouter({ routeBlockLang: 'yaml' }), Vue(), VueJsx(), UnoCSS()],
 }

@@ -29,6 +29,8 @@
     "@naive-pro/ts-config": "workspace:*",
     "@naive-pro/vite-config": "workspace:*",
     "@types/node": "*",
+    "@unocss/transformer-directives": "^0.60.3",
+    "@unocss/transformer-variant-group": "^0.60.3",
     "cz-git": "^1.9.2",
     "czg": "^1.9.2",
     "eslint": "^9.3.0",
@@ -37,6 +39,7 @@
     "turbo": "^1.13.3",
     "typescript": "^5.4.5",
     "unbuild": "^2.0.0",
+    "unocss": "^0.60.3",
     "vite": "^5.2.11",
     "vue-tsc": "^2.0.19"
   },
