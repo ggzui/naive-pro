@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { NConfigProvider, NDialogProvider, NLoadingBarProvider, NMessageProvider, NNotificationProvider, useDialog, useLoadingBar, useMessage, useNotification } from 'naive-ui'
 import { createTextVNode, defineComponent } from 'vue'
-import { useLocaleStore } from '@naive-pro/store'
+import { useLocaleStore, useThemeStore } from '@naive-pro/store'
 
 defineOptions({ name: 'NpConfigProvider' })
 
 const localeStore = useLocaleStore()
+const themeStore = useThemeStore()
 
 const ContextHolder = defineComponent({
   name: 'ContextHolder',
@@ -25,7 +26,7 @@ const ContextHolder = defineComponent({
 </script>
 
 <template>
-  <NConfigProvider :locale="localeStore.getNaiveUiLocale" :date-locale="localeStore.getNaiveUiDateLocale" class="h-full">
+  <NConfigProvider :locale="localeStore.getNaiveUiLocale" :date-locale="localeStore.getNaiveUiDateLocale" :theme="themeStore.naiveTheme" class="h-full">
     <NLoadingBarProvider>
       <NDialogProvider>
         <NNotificationProvider>

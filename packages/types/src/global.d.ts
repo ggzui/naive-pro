@@ -23,3 +23,7 @@ declare interface Window {
   /** Notification instance */
   $notification?: import('naive-ui').NotificationProviderInst
 }
+
+interface ThemeSetting {
+  themeScheme: import('./union').ThemeScheme
+}
