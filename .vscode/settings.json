@@ -47,5 +47,14 @@
     "astro"
   ],
 
-  "typescript.preferences.autoImportFileExcludePatterns": ["vue-router$"]
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "vue-router$"
+  ],
+
+  "i18n-ally.localesPaths": [
+    "apps/**/locales",
+    "packages/**/locales"
+  ],
+  "i18n-ally.sourceLanguage": "zh-CN",
+  "i18n-ally.displayLanguage": "zh-CN"
 }

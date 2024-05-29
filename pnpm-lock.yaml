@@ -172,6 +172,9 @@ importers:
       '@naive-pro/store':
         specifier: workspace:*
         version: link:../store
+      '@naive-pro/types':
+        specifier: workspace:*
+        version: link:../types
       vue:
         specifier: ^3.4.27
         version: 3.4.27(typescript@5.4.5)
@@ -204,6 +207,9 @@ importers:
 
   packages/store:
     dependencies:
+      '@naive-pro/types':
+        specifier: workspace:*
+        version: link:../types
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5))
