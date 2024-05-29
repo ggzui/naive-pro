@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@unocss/reset':
+        specifier: ^0.60.3
+        version: 0.60.3
       '@vueuse/core':
         specifier: ^10.10.0
         version: 10.10.0(vue@3.4.27(typescript@5.4.5))
+      assets:
+        specifier: ^3.0.1
+        version: 3.0.1
       naive-ui:
         specifier: ^2.38.2
         version: 2.38.2(vue@3.4.27(typescript@5.4.5))
@@ -87,6 +93,9 @@ importers:
 
   apps/admin:
     dependencies:
+      '@naive-pro/assets':
+        specifier: workspace:*
+        version: link:../../packages/assets
       '@naive-pro/i18n':
         specifier: workspace:*
         version: link:../../packages/i18n
@@ -179,6 +188,15 @@ importers:
         specifier: ^5.2.11
         version: 5.2.11(@types/node@20.12.12)
 
+  packages/assets:
+    dependencies:
+      naive-ui:
+        specifier: ^2.38.2
+        version: 2.38.2(vue@3.4.27(typescript@5.4.5))
+      vue:
+        specifier: ^3.4.27
+        version: 3.4.27(typescript@5.4.5)
+
   packages/i18n:
     dependencies:
       '@naive-pro/store':
@@ -187,6 +205,9 @@ importers:
       '@naive-pro/types':
         specifier: workspace:*
         version: link:../types
+      naive-ui:
+        specifier: ^2.38.2
+        version: 2.38.2(vue@3.4.27(typescript@5.4.5))
       vue:
         specifier: ^3.4.27
         version: 3.4.27(typescript@5.4.5)
@@ -1663,6 +1684,10 @@ packages:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
 
+  assets@3.0.1:
+    resolution: {integrity: sha512-fTyLNf/9V24y5zO83f4DAEuvaKj7MWBixbnqdZneAhsv1r21yQ/6ogZfvXHmphJAHsz4DhuOwHeJKVbGqqvk0Q==}
+    engines: {node: '>=4'}
+
   ast-kit@0.12.1:
     resolution: {integrity: sha512-O+33g7x6irsESUcd47KdfWUrS2F6aGp9KeVJFGj0YjIznfXpBxVGjA0w+y/1OKqX4mFOfmZ9Xpf1ixPT4n9xxw==}
     engines: {node: '>=16.14.0'}
@@ -1673,6 +1698,9 @@ packages:
 
   async-validator@4.2.5:
     resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==}
+
+  async@2.6.4:
+    resolution: {integrity: sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==}
 
   autoprefixer@10.4.19:
     resolution: {integrity: sha512-BaENR2+zBZ8xXhM4pUaKUxlVdxZ0EZhjvbopwnXmxRUfqDmwSpC2lAi/QXvx7NRdPCo1WKEcEF6mV64si1z4Ew==}
@@ -1693,6 +1721,9 @@ packages:
 
   bl@5.1.0:
     resolution: {integrity: sha512-tv1ZJHLfTDnXE6tMHv73YgSJaWR2AFuPwMntBe7XL/GBFHnT0CLnsHMogfk5+GzCDC5ZWarSCYaIGATZt9dNsQ==}
+
+  bluebird@3.7.2:
+    resolution: {integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==}
 
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
@@ -1735,6 +1766,30 @@ packages:
   cac@6.7.14:
     resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==}
     engines: {node: '>=8'}
+
+  calipers-gif@2.0.0:
+    resolution: {integrity: sha512-ZePtjAmTmugWWHDjZhrh7SZ8/8hG2sS5Dz6xyZ3bWkofLqq31c01GR0AvBg5Cn5/x4BjT9PhIi0VMjHBEO+kog==}
+    peerDependencies:
+      calipers: 2.x.x
+
+  calipers-jpeg@2.0.0:
+    resolution: {integrity: sha512-MAAXKh3+I0NEDGNAxBbc+sh670ZWdef/Gv0G8DvH/xLp5sxqEPBR1uQRHfk2es0vJzas4saL0RPgmoL+o+cszw==}
+    peerDependencies:
+      calipers: 2.x.x
+
+  calipers-png@2.0.0:
+    resolution: {integrity: sha512-yj2N0HSrKuePXYFX2T2710haASVF5wQ184g2THlAfbxxcc/ySRu9gUK20PIGfCfaSKt2cMMTE9jD6KZpfoehQg==}
+    peerDependencies:
+      calipers: 2.x.x
+
+  calipers-svg@2.0.1:
+    resolution: {integrity: sha512-3PROqHARmj8wWudUC7DzXm1+mSocqgY7jNuehFNHgrUVrKf8o7MqDjS92vJz5LvZsAofJsoAFMajkqwbxBROSQ==}
+
+  calipers-webp@2.0.0:
+    resolution: {integrity: sha512-np7ZtCwUjpxz+DF/RYNYFxxaltJxlF7rIVKWnU/cKcgQ7r06/Fquw1Q/oMZiJe6hfjI911lhDY6ZC+X0MtA5rg==}
+
+  calipers@2.0.1:
+    resolution: {integrity: sha512-AP4Ui2Z8fZf69d8Dx4cfJgPjQHY3m+QXGFCaAGu8pfNQjyajkosS+Kkf1n6pQDMZcelN5h3MdcjweUqxcsS4pg==}
 
   call-me-maybe@1.0.2:
     resolution: {integrity: sha512-HpX65o1Hnr9HH25ojC1YGs7HCQLq0GCOibSaWER0eNpgJ/Z1MZv2mTc7+xh6WOPxbRVcmgbv4hGU+uSQ/2xFZQ==}
@@ -2493,6 +2548,10 @@ packages:
     resolution: {integrity: sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==}
     engines: {node: '>=10.13.0'}
 
+  glob@7.2.3:
+    resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
+
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
@@ -2932,6 +2991,11 @@ packages:
     resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
     engines: {node: '>=8.6'}
 
+  mime@2.6.0:
+    resolution: {integrity: sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==}
+    engines: {node: '>=4.0.0'}
+    hasBin: true
+
   mimic-fn@2.1.0:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
     engines: {node: '>=6'}
@@ -3163,6 +3227,10 @@ packages:
   path-exists@5.0.0:
     resolution: {integrity: sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  path-is-absolute@1.0.1:
+    resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
+    engines: {node: '>=0.10.0'}
 
   path-key@3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
@@ -5766,6 +5834,20 @@ snapshots:
 
   array-union@2.1.0: {}
 
+  assets@3.0.1:
+    dependencies:
+      async: 2.6.4
+      bluebird: 3.7.2
+      calipers: 2.0.1
+      calipers-gif: 2.0.0(calipers@2.0.1)
+      calipers-jpeg: 2.0.0(calipers@2.0.1)
+      calipers-png: 2.0.0(calipers@2.0.1)
+      calipers-svg: 2.0.1
+      calipers-webp: 2.0.0
+      glob: 7.2.3
+      lodash: 4.17.21
+      mime: 2.6.0
+
   ast-kit@0.12.1:
     dependencies:
       '@babel/parser': 7.24.6
@@ -5777,6 +5859,10 @@ snapshots:
       ast-kit: 0.12.1
 
   async-validator@4.2.5: {}
+
+  async@2.6.4:
+    dependencies:
+      lodash: 4.17.21
 
   autoprefixer@10.4.19(postcss@8.4.38):
     dependencies:
@@ -5799,6 +5885,8 @@ snapshots:
       buffer: 6.0.3
       inherits: 2.0.4
       readable-stream: 3.6.2
+
+  bluebird@3.7.2: {}
 
   boolbase@1.0.0: {}
 
@@ -5854,6 +5942,33 @@ snapshots:
       rc9: 2.1.2
 
   cac@6.7.14: {}
+
+  calipers-gif@2.0.0(calipers@2.0.1):
+    dependencies:
+      bluebird: 3.7.2
+      calipers: 2.0.1
+
+  calipers-jpeg@2.0.0(calipers@2.0.1):
+    dependencies:
+      bluebird: 3.7.2
+      calipers: 2.0.1
+
+  calipers-png@2.0.0(calipers@2.0.1):
+    dependencies:
+      bluebird: 3.7.2
+      calipers: 2.0.1
+
+  calipers-svg@2.0.1:
+    dependencies:
+      bluebird: 3.7.2
+
+  calipers-webp@2.0.0:
+    dependencies:
+      bluebird: 3.7.2
+
+  calipers@2.0.1:
+    dependencies:
+      bluebird: 3.7.2
 
   call-me-maybe@1.0.2: {}
 
@@ -6744,6 +6859,15 @@ snapshots:
     dependencies:
       is-glob: 4.0.3
 
+  glob@7.2.3:
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 3.1.2
+      once: 1.4.0
+      path-is-absolute: 1.0.1
+
   glob@8.1.0:
     dependencies:
       fs.realpath: 1.0.0
@@ -7125,6 +7249,8 @@ snapshots:
       braces: 3.0.3
       picomatch: 2.3.1
 
+  mime@2.6.0: {}
+
   mimic-fn@2.1.0: {}
 
   mimic-fn@4.0.0: {}
@@ -7381,6 +7507,8 @@ snapshots:
   path-exists@4.0.0: {}
 
   path-exists@5.0.0: {}
+
+  path-is-absolute@1.0.1: {}
 
   path-key@3.1.1: {}
 
