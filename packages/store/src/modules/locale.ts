@@ -1,6 +1,8 @@
 import { defineStore } from 'pinia'
-import { reactive, toRefs } from 'vue'
+import { computed, reactive, toRefs } from 'vue'
 import type { LangType } from '@naive-pro/types'
+import type { NDateLocale, NLocale } from 'naive-ui'
+import { naiveUiDateLocales, naiveUiLocales } from '../utils/naiveUiLocale'
 import { store } from '../setupStore'
 
 export interface LocaleState {
@@ -16,7 +18,15 @@ export const useLocaleStore = defineStore(
       fallbackLocale: 'zh-CN',
     })
 
-    return { ...toRefs(state) }
+    const getNaiveUiLocale = computed<NLocale>(() => {
+      return naiveUiLocales[state.locale]
+    })
+
+    const getNaiveUiDateLocale = computed<NDateLocale>(() => {
+      return naiveUiDateLocales[state.locale]
+    })
+
+    return { ...toRefs(state), getNaiveUiLocale, getNaiveUiDateLocale }
   },
   {
     persist: true,
