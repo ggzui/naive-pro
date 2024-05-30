@@ -7,6 +7,40 @@ export default antfu(
   {
     rules: {
       'no-console': 'warn',
+
+      'import/order': [
+        'error',
+        {
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            'parent',
+            'sibling',
+            'index',
+            'object',
+            'type',
+          ],
+
+          pathGroups: [
+            {
+              pattern: 'vue',
+              group: 'external',
+              position: 'before',
+            },
+            {
+              pattern: '@vue/**',
+              group: 'external',
+              position: 'before',
+            },
+            {
+              pattern: '@naive-pro/**',
+              group: 'internal',
+            },
+          ],
+          pathGroupsExcludedImportTypes: ['type'],
+        },
+      ],
     },
   },
 )

@@ -6,9 +6,9 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Imagemin from 'unplugin-imagemin/vite'
 import Macros from 'unplugin-macros/vite'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
-import { NaiveProResolver } from '@naive-pro/shared'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+import { NaiveProResolver } from '@naive-pro/shared'
 
 export function configUnpluginPlugin() {
   const projectRoot = resolve(__dirname, '../../../../')

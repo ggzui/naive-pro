@@ -1,8 +1,8 @@
-import { defineStore } from 'pinia'
 import { computed, reactive, toRefs } from 'vue'
+import { defineStore } from 'pinia'
 import { naiveUiDateLocales, naiveUiLocales } from '@naive-pro/i18n'
-import type { LangType } from '@naive-pro/types'
 import { store } from '../setupStore'
+import type { LangType } from '@naive-pro/types'
 
 export interface LocaleState {
   locale: LangType

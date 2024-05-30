@@ -1,9 +1,9 @@
-import type { App } from 'vue'
-import type { I18nOptions } from 'vue-i18n'
 import { createI18n } from 'vue-i18n'
 import messages from '@intlify/unplugin-vue-i18n/messages'
 import { useLocaleStoreWithout } from '@naive-pro/store'
 import { setHtmlPageLang } from './helper'
+import type { I18nOptions } from 'vue-i18n'
+import type { App } from 'vue'
 
 // eslint-disable-next-line import/no-mutable-exports
 export let i18n: ReturnType<typeof createI18n>

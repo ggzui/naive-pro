@@ -1,7 +1,7 @@
-import type { App } from 'vue'
 import { createPinia } from 'pinia'
 import { createPersistedState } from 'pinia-plugin-persistedstate'
 import { parse, stringify } from 'zipson'
+import type { App } from 'vue'
 
 export const store = createPinia()
 

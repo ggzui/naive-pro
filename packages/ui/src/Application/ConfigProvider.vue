@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { NConfigProvider, NDialogProvider, NLoadingBarProvider, NMessageProvider, NNotificationProvider, useDialog, useLoadingBar, useMessage, useNotification } from 'naive-ui'
 import { createTextVNode, defineComponent } from 'vue'
+import { NConfigProvider, NDialogProvider, NLoadingBarProvider, NMessageProvider, NNotificationProvider, useDialog, useLoadingBar, useMessage, useNotification } from 'naive-ui'
 import { useLocaleStore, useThemeStore } from '@naive-pro/store'
 
 defineOptions({ name: 'NpConfigProvider' })

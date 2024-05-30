@@ -1,6 +1,6 @@
-import type { App } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { setupRouterGuard } from './guard'
+import type { App } from 'vue'
 
 export const router = createRouter({
   strict: true,

@@ -1,8 +1,8 @@
-import type { PluginOption } from 'vite'
 import { configMockPlugin } from './mock'
 import { configVisualizerPlugin } from './visualizer'
 import { configDevtoolsPlugin } from './devtools'
 import { configUnpluginPlugin } from './unplugin'
+import type { PluginOption } from 'vite'
 
 export interface VitePluginOptions {
   root: string

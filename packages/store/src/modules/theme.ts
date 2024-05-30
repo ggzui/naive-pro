@@ -1,9 +1,9 @@
-import { defineStore } from 'pinia'
 import { computed, ref, toRefs } from 'vue'
+import { defineStore } from 'pinia'
 import { useDark, useToggle } from '@vueuse/core'
-import type { Ref } from 'vue'
 import { darkTheme } from 'naive-ui'
 import { store } from '../setupStore'
+import type { Ref } from 'vue'
 // eslint-disable-next-line ts/ban-ts-comment, ts/prefer-ts-expect-error
 // @ts-ignore
 // TODO: fix this type error
