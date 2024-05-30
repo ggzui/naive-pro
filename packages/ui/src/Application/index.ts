@@ -1,1 +1,1 @@
-export { default as NpConfigProvider } from './ConfigProvider.vue'
+export { default as NpConfigProvider } from './config-provider.vue'
