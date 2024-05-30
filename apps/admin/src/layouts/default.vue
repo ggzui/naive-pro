@@ -1,6 +1,5 @@
 <template>
-  <main>
-    <div>default</div>
+  <np-layout>
     <router-view />
-  </main>
+  </np-layout>
 </template>

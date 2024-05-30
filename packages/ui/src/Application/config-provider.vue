@@ -26,16 +26,16 @@ const ContextHolder = defineComponent({
 </script>
 
 <template>
-  <NConfigProvider :locale="localeStore.naiveLocale" :date-locale="localeStore.naiveDateLocale" :theme="themeStore.naiveTheme" class="h-full">
-    <NLoadingBarProvider>
-      <NDialogProvider>
-        <NNotificationProvider>
-          <NMessageProvider>
-            <ContextHolder />
+  <n-config-provider :locale="localeStore.naiveLocale" :date-locale="localeStore.naiveDateLocale" :theme="themeStore.naiveTheme" class="h-full">
+    <n-loading-bar-provider>
+      <n-dialog-provider>
+        <n-notification-provider>
+          <n-message-provider>
+            <context-holder />
             <slot />
-          </NMessageProvider>
-        </NNotificationProvider>
-      </NDialogProvider>
-    </NLoadingBarProvider>
-  </NConfigProvider>
+          </n-message-provider>
+        </n-notification-provider>
+      </n-dialog-provider>
+    </n-loading-bar-provider>
+  </n-config-provider>
 </template>

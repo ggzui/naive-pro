@@ -41,6 +41,8 @@ export default antfu(
           pathGroupsExcludedImportTypes: ['type'],
         },
       ],
+
+      "vue/component-name-in-template-casing": ["error", "kebab-case"],
     },
   },
 )
