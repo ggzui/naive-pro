@@ -179,6 +179,9 @@ importers:
       vite-plugin-vue-devtools:
         specifier: ^7.2.1
         version: 7.2.1(@nuxt/kit@3.11.2(rollup@3.29.4))(rollup@3.29.4)(vite@5.2.11(@types/node@20.12.12))(vue@3.4.27(typescript@5.4.5))
+      vite-plugin-vue-layouts:
+        specifier: ^0.11.0
+        version: 0.11.0(vite@5.2.11(@types/node@20.12.12))(vue-router@4.3.2(vue@3.4.27(typescript@5.4.5)))(vue@3.4.27(typescript@5.4.5))
     devDependencies:
       unbuild:
         specifier: ^2.0.0
@@ -223,6 +226,9 @@ importers:
       unplugin-vue-router:
         specifier: ^0.8.8
         version: 0.8.8(rollup@4.18.0)(vue-router@4.3.2(vue@3.4.27(typescript@5.4.5)))(vue@3.4.27(typescript@5.4.5))
+      vite-plugin-vue-layouts:
+        specifier: ^0.11.0
+        version: 0.11.0(vite@5.2.11(@types/node@20.12.12))(vue-router@4.3.2(vue@3.4.27(typescript@5.4.5)))(vue@3.4.27(typescript@5.4.5))
 
   packages/shared:
     dependencies:
@@ -267,6 +273,9 @@ importers:
       unplugin-vue-router:
         specifier: ^0.8.8
         version: 0.8.8(rollup@4.18.0)(vue-router@4.3.2(vue@3.4.27(typescript@5.4.5)))(vue@3.4.27(typescript@5.4.5))
+      vite-plugin-vue-layouts:
+        specifier: ^0.11.0
+        version: 0.11.0(vite@5.2.11(@types/node@20.12.12))(vue-router@4.3.2(vue@3.4.27(typescript@5.4.5)))(vue@3.4.27(typescript@5.4.5))
 
   packages/ui:
     dependencies:
@@ -4079,6 +4088,13 @@ packages:
     resolution: {integrity: sha512-M+yH2LlQtVNzJAljQM+61CqDXBvHim8dU5ImGaQuwlo13tMDHue5D7IC20YwDJuWDODiYc/cZBUYspVlyPf2vQ==}
     peerDependencies:
       vite: ^3.0.0-0 || ^4.0.0-0 || ^5.0.0-0
+
+  vite-plugin-vue-layouts@0.11.0:
+    resolution: {integrity: sha512-uh6NW7lt+aOXujK4eHfiNbeo55K9OTuB7fnv+5RVc4OBn/cZull6ThXdYH03JzKanUfgt6QZ37NbbtJ0og59qw==}
+    peerDependencies:
+      vite: ^4.0.0 || ^5.0.0
+      vue: ^3.2.4
+      vue-router: ^4.0.11
 
   vite@5.2.11:
     resolution: {integrity: sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ==}
@@ -8530,6 +8546,16 @@ snapshots:
       kolorist: 1.8.0
       magic-string: 0.30.10
       vite: 5.2.11(@types/node@20.12.12)
+    transitivePeerDependencies:
+      - supports-color
+
+  vite-plugin-vue-layouts@0.11.0(vite@5.2.11(@types/node@20.12.12))(vue-router@4.3.2(vue@3.4.27(typescript@5.4.5)))(vue@3.4.27(typescript@5.4.5)):
+    dependencies:
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      vite: 5.2.11(@types/node@20.12.12)
+      vue: 3.4.27(typescript@5.4.5)
+      vue-router: 4.3.2(vue@3.4.27(typescript@5.4.5))
     transitivePeerDependencies:
       - supports-color
 
