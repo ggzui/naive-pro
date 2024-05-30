@@ -8,6 +8,27 @@ importers:
 
   .:
     dependencies:
+      '@naive-pro/assets':
+        specifier: workspace:*
+        version: link:packages/assets
+      '@naive-pro/i18n':
+        specifier: workspace:*
+        version: link:packages/i18n
+      '@naive-pro/router':
+        specifier: workspace:*
+        version: link:packages/router
+      '@naive-pro/shared':
+        specifier: workspace:*
+        version: link:packages/shared
+      '@naive-pro/store':
+        specifier: workspace:*
+        version: link:packages/store
+      '@naive-pro/types':
+        specifier: workspace:*
+        version: link:packages/types
+      '@naive-pro/ui':
+        specifier: workspace:*
+        version: link:packages/ui
       '@unocss/reset':
         specifier: ^0.60.3
         version: 0.60.3
@@ -17,6 +38,12 @@ importers:
       assets:
         specifier: ^3.0.1
         version: 3.0.1
+      dayjs:
+        specifier: ^1.11.11
+        version: 1.11.11
+      lodash-es:
+        specifier: ^4.17.21
+        version: 4.17.21
       naive-ui:
         specifier: ^2.38.2
         version: 2.38.2(vue@3.4.27(typescript@5.4.5))
@@ -91,35 +118,7 @@ importers:
         specifier: ^2.0.19
         version: 2.0.19(typescript@5.4.5)
 
-  apps/admin:
-    dependencies:
-      '@naive-pro/assets':
-        specifier: workspace:*
-        version: link:../../packages/assets
-      '@naive-pro/i18n':
-        specifier: workspace:*
-        version: link:../../packages/i18n
-      '@naive-pro/router':
-        specifier: workspace:*
-        version: link:../../packages/router
-      '@naive-pro/store':
-        specifier: workspace:*
-        version: link:../../packages/store
-      '@naive-pro/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      naive-ui:
-        specifier: ^2.38.2
-        version: 2.38.2(vue@3.4.27(typescript@5.4.5))
-      pinia:
-        specifier: ^2.1.7
-        version: 2.1.7(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5))
-      vue:
-        specifier: ^3.4.27
-        version: 3.4.27(typescript@5.4.5)
-      vue-router:
-        specifier: ^4.3.2
-        version: 4.3.2(vue@3.4.27(typescript@5.4.5))
+  apps/admin: {}
 
   internal/ts-config:
     dependencies:
@@ -199,12 +198,9 @@ importers:
 
   packages/i18n:
     dependencies:
-      '@naive-pro/store':
-        specifier: workspace:*
-        version: link:../store
-      '@naive-pro/types':
-        specifier: workspace:*
-        version: link:../types
+      dayjs:
+        specifier: ^1.11.11
+        version: 1.11.11
       naive-ui:
         specifier: ^2.38.2
         version: 2.38.2(vue@3.4.27(typescript@5.4.5))
@@ -240,9 +236,6 @@ importers:
 
   packages/store:
     dependencies:
-      '@naive-pro/types':
-        specifier: workspace:*
-        version: link:../types
       naive-ui:
         specifier: ^2.38.2
         version: 2.38.2(vue@3.4.27(typescript@5.4.5))
@@ -277,12 +270,6 @@ importers:
 
   packages/ui:
     dependencies:
-      '@naive-pro/i18n':
-        specifier: workspace:*
-        version: link:../i18n
-      '@naive-pro/store':
-        specifier: workspace:*
-        version: link:../store
       naive-ui:
         specifier: ^2.38.2
         version: 2.38.2(vue@3.4.27(typescript@5.4.5))
@@ -2047,6 +2034,9 @@ packages:
   date-fns@2.30.0:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
+
+  dayjs@1.11.11:
+    resolution: {integrity: sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==}
 
   de-indent@1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
@@ -6242,6 +6232,8 @@ snapshots:
   date-fns@2.30.0:
     dependencies:
       '@babel/runtime': 7.24.6
+
+  dayjs@1.11.11: {}
 
   de-indent@1.0.2: {}
 

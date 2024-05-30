@@ -16,9 +16,18 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@naive-pro/assets": "workspace:*",
+    "@naive-pro/i18n": "workspace:*",
+    "@naive-pro/router": "workspace:*",
+    "@naive-pro/shared": "workspace:*",
+    "@naive-pro/store": "workspace:*",
+    "@naive-pro/types": "workspace:*",
+    "@naive-pro/ui": "workspace:*",
     "@unocss/reset": "^0.60.3",
     "@vueuse/core": "^10.10.0",
     "assets": "^3.0.1",
+    "dayjs": "^1.11.11",
+    "lodash-es": "^4.17.21",
     "naive-ui": "^2.38.2",
     "pinia": "^2.1.7",
     "vue": "^3.4.27",

@@ -7,18 +7,5 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
-  },
-  "peerDependencies": {
-    "naive-ui": "^2.38.2",
-    "pinia": "^2.1.7",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
-  },
-  "dependencies": {
-    "@naive-pro/assets": "workspace:*",
-    "@naive-pro/i18n": "workspace:*",
-    "@naive-pro/router": "workspace:*",
-    "@naive-pro/store": "workspace:*",
-    "@naive-pro/ui": "workspace:*"
   }
 }
