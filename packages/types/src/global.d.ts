@@ -35,3 +35,11 @@ interface ThemeSetting {
     info: string
   }
 }
+
+interface AppSetting {
+  headerHight: number
+  tabHeight: number
+  siderWidth: number
+  siderCollapsedWidth: number
+  footerHight: number
+}
